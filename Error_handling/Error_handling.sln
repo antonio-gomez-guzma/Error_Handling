@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Error_handling", "Error_han
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Error_handling.Tests.NUnit", "Error_handling.Tests.NUnit\Error_handling.Tests.NUnit.csproj", "{1CA3E308-AD88-453F-A71D-F0653C79ADAB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Error_handling.Tests.xUnit", "Error_handling.Tests.xUnit\Error_handling.Tests.xUnit.csproj", "{2B8004DC-3BDC-4BD4-A44B-6DF7DC543301}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Error_handling.Tests.MSTest", "Error_handling.Tests.MSTest\Error_handling.Tests.MSTest.csproj", "{806DCA65-FD36-42C8-B472-BF896C1AB817}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{1CA3E308-AD88-453F-A71D-F0653C79ADAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CA3E308-AD88-453F-A71D-F0653C79ADAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CA3E308-AD88-453F-A71D-F0653C79ADAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B8004DC-3BDC-4BD4-A44B-6DF7DC543301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B8004DC-3BDC-4BD4-A44B-6DF7DC543301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B8004DC-3BDC-4BD4-A44B-6DF7DC543301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B8004DC-3BDC-4BD4-A44B-6DF7DC543301}.Release|Any CPU.Build.0 = Release|Any CPU
+		{806DCA65-FD36-42C8-B472-BF896C1AB817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{806DCA65-FD36-42C8-B472-BF896C1AB817}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{806DCA65-FD36-42C8-B472-BF896C1AB817}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{806DCA65-FD36-42C8-B472-BF896C1AB817}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
