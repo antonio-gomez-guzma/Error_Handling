@@ -15,8 +15,18 @@ string operation = ReadLine()!.ToUpperInvariant();
 try
 {
     var calculator = new Calculator();
-    int result = calculator.Calculate(number1, number2, null!);
+    int result = calculator.Calculate(number1, number2, operation);
     DisplayResult(result);
+}
+catch (ArgumentNullException ex)
+{
+    // Log.Error(ex);
+    WriteLine($"Operation was not provided. {ex}");
+}
+catch (ArgumentOutOfRangeException ex)
+{
+    // Log.Error(ex);
+    WriteLine($"Operation is not supported. {ex}");
 }
 catch (Exception ex)
 {
