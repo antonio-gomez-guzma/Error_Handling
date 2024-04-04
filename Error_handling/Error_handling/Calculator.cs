@@ -4,7 +4,7 @@ public class Calculator
 {
     public int Calculate(int number1, int number2, string operation)
     {
-        string nonNullOperation =
+        string nonNullOperation = 
             operation ?? throw new ArgumentNullException(nameof(operation));
 
         if (nonNullOperation == "/")
@@ -13,20 +13,18 @@ public class Calculator
             {
                 return Divide(number1, number2);
             }
-            catch (DivideByZeroException ex)
+            catch (Exception ex)
             {
                 Console.WriteLine("...logging...");
                 // Log.Error(ex);
                 //throw;
 
-                throw new ArithmeticException("An error occurred during calculation.",
-                                              ex);
+                throw new CalculationException(ex);
             }
         }
         else
         {
-            throw new ArgumentOutOfRangeException(nameof(operation),
-                "The mathematical operator is not supported.");
+            throw new CalculationOperationNotSupportedException(operation);
         }
     }
 
