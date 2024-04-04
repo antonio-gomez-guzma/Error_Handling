@@ -12,14 +12,19 @@ int number2 = int.Parse(ReadLine()!);
 WriteLine("Enter operation");
 string operation = ReadLine()!.ToUpperInvariant();
 
-
-var calculator = new Calculator();
-int result = calculator.Calculate(number1, number2, operation);
-DisplayResult(result);
-
+try
+{
+    var calculator = new Calculator();
+    int result = calculator.Calculate(number1, number2, operation);
+    DisplayResult(result);
+}
+catch (Exception ex)
+{
+    WriteLine($"Sorry, something went wrong. {ex}");
+}
 
 WriteLine("\nPress enter to exit.");
 ReadLine();
-    
+
 
 static void DisplayResult(int result) => WriteLine($"Result is: {result}");
